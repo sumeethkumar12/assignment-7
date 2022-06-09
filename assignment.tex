@@ -1,0 +1,59 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{assignment 7} 
+\author{sumeeth kumar \\ ai21btech11008}
+\date{5th june}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+% Lists frame
+\section{question}
+\begin{frame}{example:8.24}
+\begin{itemize}
+    \item we roll a die 300 times and we observe that $f_i$ shows $k_i$= 55,43,44
+    ,61,40,57 times. Test the hypothesis that the die is fair with $\alpha$=0.05.
+    by using pearsons test statistics.\end{itemize}
+
+
+\end{frame}
+\section{solution}
+\begin{frame}{solution}
+    In this problem ,$p_{Oi} = 1/6$,$ m = 6$ ,$ np_{oi} = 50$, by using pearsons
+    test equation.
+    \begin{align}
+       &{q=\sum_{i=1}^m \dfrac{(k_i- np_{oi})^2}{ np_{oi}}}
+    \end{align}
+     by substituting the above given values we get,
+     
+     \begin{align}
+         &{q=\sum_{i=1}^m \dfrac{(k_i- 50)^2}{ 50}} \\[8pt]
+           &{q=\ \dfrac{(5)^2+(-7)^2+(-6)^2+(11)^2+(-10)^2+(7)^2}{ 50}}
+     \end{align}
+\end{frame}
+    \begin{frame}
+        \begin{align}
+            &q= 7.6\\[8pt]
+            &\chi_{0.95}^2=11.07
+        \end{align}\\
+        since from above eqns we get,\\ $ \chi_{0.95}^2 =11.07>(q= 7.6)$ , by that we can say fair die hypotheis is accepted. 
+    \end{frame}
+\end{document}
